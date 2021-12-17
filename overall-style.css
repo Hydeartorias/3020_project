@@ -1,0 +1,46 @@
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-item {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.flexbox-item:hover {
+    background-color: grey;
+    transition:0.5s;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+  
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
