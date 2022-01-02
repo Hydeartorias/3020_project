@@ -1,12 +1,278 @@
 @import url(https://fonts.googleapis.com/css?family=Arimo);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
-    font-family: Georgia, Times, serif;
+    font-family: Roboto;
     color: purple;
     background-color: white;
+    text-align: center;
 }
 
 /*@jerichodinozo*/
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+  
+ul.breadcrumb li a {
+    color: gray;
+    text-decoration: none;
+}
+  
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.flex-breadcrumb {
+    
+}
+
+.breadcrumb-container {
+    justify-content: center;
+}
+
+.page-title {
+    font-size: 70px;
+    color: gray;
+    margin-top: 30px;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.item1-icon {
+    font-size: 100px;
+    color: white;
+}
+
+.icon {
+    font-size: 50px;
+    color: white;
+}
+
+.grouping-panel1{
+    padding-top: 80px;
+}
+
+.grouping {
+    padding-top: 30px;
+}
+
+.grid-container {
+    margin-top: -100px;
+    display: grid;
+    grid-template-rows:    repeat(3, 150px);
+    grid-template-columns: repeat(4, 150px);
+    grid-row-gap:5px;
+    grid-column-gap: 5px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.date-panel {
+    text-align: center;
+    color: white;
+}
+
+.time {
+    padding-top: 10px;
+    color: white;
+    font-size: 60px;
+}
+
+.grid-text {
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+}
+
+.grid-item {
+    background: #D3D3D3;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.grid-item:hover {
+    background-color: grey;
+    transition: 0.65s;
+    border-radius: 20px;
+}
+
+.grid-item1 {
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+.grid-item2 {
+    grid-column-start: span 2;
+    
+}
+
+.grid-item3 {
+
+}
+
+.grid-item4 {
+
+}
+
+.grid-item5 {
+
+}
+
+.grid-item6 {
+
+}
+
+.overall-flexbox {
+    justify-content: center;
+    align-items: center;
+}
+
+#overall-container {
+    margin-top: -100px;
+    display: grid;
+    grid-template-rows:    repeat(3, 150px);
+    grid-template-columns: repeat(5, 150px);
+    grid-row-gap:5px;
+    grid-column-gap: 5px;
+}
+
+#overall-item0 {
+    background-color: #E0BBE4;
+}
+
+#overall-item1 {
+    background-color: #B2AA9B;
+}
+
+#overall-item2 {
+    background-color: #999ACF;
+}
+
+#overall-item3 {
+    background-color: #CEB493;
+}
+
+#overall-item4 {
+    background-color: #C69EBE;
+}
+
+#overall-item5 {
+    background-color: #D4C6B2;
+}
+
+#overall-item6 {
+    background-color: #D4B1AA;
+}
+
+.overall-item7 {
+    
+}
+
+.overall-item8 {
+    
+}
+
+.overall-item9 {
+    
+}
+
+.overall-item10 {
+    
+}
+
+.overall-item11 {
+    
+}
+
+.overall-item12 {
+    
+}
+
+.overall-item13 {
+    
+}
+
+.overall-item14 {
+    
+}
+
+.overall-item15 {
+    
+}
+
+.flexbox-container {
+    height:100vh;
+    display: flex;
+}
+
+.flex-home-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-item {
+    margin: 50px;
+}
+
+.login-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.login-space {
+    padding: 50px;
+    
+    background-color: #f8f8f8;
+}
+
+.login-btns {
+    padding-top: 10px;
+}
+
+.login-btn {
+    
+}
+
+.help-container {
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+}
+
+#help-text-field input{
+    width:500px;
+}
+
+textarea {
+    width: 500px;
+    height: 300px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 14px;
+}
     
 #add_title {
     font-family: Roboto;
@@ -152,6 +418,13 @@ label {
     border-radius: 10px;
     width: 200px;
     height: 200px;
+}
+
+.circle-shape {
+    background: #D3D3D3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 
