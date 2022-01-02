@@ -5,12 +5,32 @@
     </head>
 
     <body>
-        <div class="page-title">
-            Help
+        <header>
+            <ul class="breadcrumb">
+                <li><a href="home.html">home</a></li>
+                <li><a href="#">help</a></li>
+              </ul>
+        </header>
+        <div class="flexbox-container help-container">
+            <div class="flexbox-item">
+                <div class="page-title">
+                    help
+                </div>
+                <form>
+                    <section class="help-input-area">
+                        <section style="text-align:center">
+                            <label class="text-field" id="help-text-field">
+                                <input type="text" id="name" name="name" required/>
+                                <span class="placeholder">Provide a summary of the problem</span>
+                            </label>
+                        </section>
+                        <textarea name="message" rows="10" cols="30" placeholder="type description here"></textarea>    
+                        <section class="login-btns">
+                            <input type="submit" value="send" class="send-btn login-btn">
+                        </section>                
+                    </section>
+                </form>
+            </div> 
         </div>
-        <label class="text-field">
-            <input type="text" id="name" name="name" required/>
-            <span class="placeholder">Provide a summary of the problem</span>
-        </label>
     </body>
 </html>
