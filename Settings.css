@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, Times, serif;
+    color: purple;
+    background-color: white;
+}
+.set {
+    width: 30%;
+    border-radius: 20px;
+    border: 2px outset rgb(143, 142, 142) ;
+    padding: 10%;
+    background-color: #E7E9EB ;
+    text-align: center;
+}
+.b1{
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background: #aaa;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 250ms;
+    cursor: pointer;
+    margin: 10 auto;
+    float: right;
+}
+.b1:hover {
+    transform: translateY(-10px);
+    background: black;
+}
+.logout{
+    width: 80%;
+    height: 40px;
+    align-self: center;
+    margin-top: 70%;
+    margin-right: 10%;
+}
+
+.settingPage{
+    height: 100%;
+    align-self: center;
+    border-radius: 20px;
+    border: 2px outset rgb(143, 142, 142) ;
+    padding: 15%;
+    background-color: #989999 ;
+    text-align: center;
+    display: flex;
+    padding-top: 5%;
+    flex-direction: row;
+    justify-content: center;
+}
+.left{
+    width: 20%;
+    height: 80%;
+    background-color: rgb(210, 214, 184);
+    align-items: left;
+}
+.right{
+    background-color: rgb(203, 211, 208);
+    width: 70%;
+    height: 80%;
+    display: inline;
+}
+.leftR{
+    background-color: rgb(147, 142, 151);
+    width: 20%;
+    margin-top: 20%;
+    flex: 1;
+
+}
+.usr{
+    display: none;
+}
+.rightR{
+    background-color: rgb(207, 206, 206);
+    width : 80%;
+    margin-top: -20%;
+    float: right;
+    
+}
+.list1{
+    width: 80%;
+    display: inline-block;
+    clear: left;
+}
+.apply{
+    width: 30%;
+}
