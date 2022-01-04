@@ -39,8 +39,7 @@ ul.breadcrumb li a {
 }
   
 ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+    color: black;
 }
 
 .flex-breadcrumb {
@@ -294,6 +293,15 @@ ul.breadcrumb li a:hover {
 
 #help-text-field input{
     width:500px;
+}
+
+#settings-container {
+    grid-template-rows:    repeat(1, 150px);
+    grid-template-columns: repeat(3, 150px);
+}
+
+.settings-item {
+   text-align: center;
 }
 
 textarea {
