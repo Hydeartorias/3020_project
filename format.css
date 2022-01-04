@@ -3,11 +3,19 @@
 body {
     font-family: Roboto;
     color: purple;
-    background-color: white;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
 /*@jerichodinozo*/
+
+header {
+    margin-bottom: -50px;
+}
+
+.breadcrumb {
+    text-align: left;
+}
 
 ul.breadcrumb {
     padding: 10px 16px;
@@ -108,7 +116,6 @@ ul.breadcrumb li a:hover {
     background: #D3D3D3;
     border-radius: 2px;
     cursor: pointer;
-
 }
 
 .grid-item:hover {
@@ -149,12 +156,28 @@ ul.breadcrumb li a:hover {
 }
 
 #overall-container {
-    margin-top: -100px;
+    margin-top: -230px;
     display: grid;
     grid-template-rows:    repeat(3, 150px);
     grid-template-columns: repeat(5, 150px);
     grid-row-gap:5px;
     grid-column-gap: 5px;
+}
+
+.overall-title {
+    color: black;
+}
+
+.overall-item {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overall-grade {
+    
 }
 
 #overall-item0 {
@@ -185,40 +208,40 @@ ul.breadcrumb li a:hover {
     background-color: #D4B1AA;
 }
 
-.overall-item7 {
-    
+#overall-item7 {
+    background-color: #abc4ff;
 }
 
-.overall-item8 {
-    
+#overall-item8 {
+    background-color: #ffee93;
 }
 
-.overall-item9 {
-    
+#overall-item9 {
+    background-color: #ffc09f;
 }
 
-.overall-item10 {
-    
+#overall-item10 {
+    background-color: #adf7b6;
 }
 
-.overall-item11 {
-    
+#overall-item11 {
+    background-color: #ddedea;
 }
 
-.overall-item12 {
-    
+#overall-item12 {
+    background-color: #fcf4dd;
 }
 
-.overall-item13 {
-    
+#overall-item13 {
+    background-color: #52b2cf;
 }
 
-.overall-item14 {
-    
+#overall-item14 {
+    background-color: #d4afb9;
 }
 
-.overall-item15 {
-    
+#overall-item15 {
+    background-color: #9cadce;
 }
 
 .flexbox-container {
@@ -252,6 +275,15 @@ ul.breadcrumb li a:hover {
 
 .login-btn {
     
+}
+
+.signup-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-items {
+    margin-top: -150px;
 }
 
 .help-container {
