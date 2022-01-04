@@ -2,6 +2,56 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
+header {
+    margin-bottom: -50px;
+}
+
+.breadcrumb {
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+}
+
+#account-settings-items ul li {
+    color: gray;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+  
+ul.breadcrumb li a {
+    color: gray;
+    text-decoration: none;
+}
+  
+ul.breadcrumb li a:hover {
+    color: black;
+}
+
+.flex-breadcrumb {
+    
+}
+
+.breadcrumb-container {
+    justify-content: center;
+}
+
+
 /* Month header */
 .month {
   padding: 70px 25px;
