@@ -17,6 +17,14 @@ header {
     text-align: left;
 }
 
+ul {
+    list-style: none;
+}
+
+#account-settings-items ul li {
+    color: gray;
+}
+
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -302,6 +310,16 @@ ul.breadcrumb li a:hover {
 
 .settings-item {
    text-align: center;
+}
+
+.account-container {
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+#account-settings-items {
+    
 }
 
 textarea {
