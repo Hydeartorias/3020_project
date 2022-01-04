@@ -1,4 +1,5 @@
 # 3020_project
+COMP 3020. 
 This project is a course tracker.
 This program tracks your current semester's assignments, tests, quizzes, and grades.
 Click the following to try our program out.
