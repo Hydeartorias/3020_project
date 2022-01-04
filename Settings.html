@@ -2,6 +2,7 @@
     <head>
         <title>Settings</title>
         <link rel="stylesheet" href="Settings.css">
+        <!-- <script src="Settings.js"></script> -->
     </head>
     <body>
         <div class="settingPage">
@@ -9,9 +10,9 @@
             <h3>Settings</h3>  
             <ul class="list1" style="list-style-type:none;">
                 <li><button class="b1 usrSet">User Settings</button></li>
-                <li><button class="b1 ClsSet">Class Settings</button></li>
+                <li><button class="b1 clsSet">Class Settings</button></li>
             </ul>  
-            <button class="b1 logout">Logout</button>
+            <button onclick="location.href = 'addClass.html';" class = "b1 logout">Logout</button>
         </div>
         <div class="right" >
             <div class="usr">
@@ -19,9 +20,10 @@
                 <input type="text">
                 <h3>Change Password</h3>
                 <input type="password" name="new" id="newPass">
+                <br>
                 <button class="b1 submit">Submit</button>
             </div>
-            <div class="class">
+            <div class="classes">
                 <div class="leftR" >
                     <h3>Classes</h3>  
                     <ul class="list1" style="list-style-type:none;">
@@ -31,18 +33,80 @@
                     </ul>
                 </div>
                 <div class="rightR">
-                        <h3>Change Color</h3>
-                        <input type="color" name="NColor" id="color">
-                        <br><br>
-                        <h3>Change Name</h3>
-                        <input type="text" name="NName" id="name" value="enter new name">
-                        <br><br>
-                        <button class="b1 apply">apply</button>
-
-                    </div>
+                    <h3>Change Color</h3>
+                    <input type="color" name="NColor" id="color">
+                    <br><br>
+                    <h3>Change Name</h3>
+                    <input type="text" name="NName" id="name" value="enter new name" onclick = "clear()">
+                    <br><br>
+                    <button class="b1 apply">apply</button>
+                </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
+    <script>
+        
+        const disA = document.querySelector('.usr');
+        const disB = document.querySelector('.classes');
+
+        disB.style.display = "none";
+
+        const btnSetA = document.querySelector('.usrSet');
+        const btnSetB = document.querySelector('.clsSet');
+        const btnApp = document.querySelector('.apply');
+        const btnSubmit = document.querySelector('.submit');
+
+         active = 0;
+
+        btnSetA.onmouseover = () => {
+            resetAllDisplay();
+            disA.style.display = "block";
+        }
+
+        btnSetB.onmouseover = () => {
+            resetAllDisplay();
+            disB.style.display = "block";
+        }
+        btnSetA.onmouseout = () => {
+            resetAllDisplay();
+            if(active === 0){
+                disA.style.display = "block";
+            }
+            else
+            disB.style.display = "block";
+        }
+        btnSetB.onmouseout = () => {
+            resetAllDisplay();
+            if(active === 0){
+                disA.style.display = "block";
+            }
+            else
+            disB.style.display = "block";
+        }
+
+        btnSetA.onclick = () => {
+            resetAllDisplay();
+            disA.style.display = "block";
+            active = 0;
+        }
+
+        btnSetB.onclick = () => {
+            resetAllDisplay();
+            disB.style.display = "block";
+            active = 1;
+        }
+        btnApp.onclick = () => {
+            alert("updated successfully")
+        }
+        btnSubmit.onclick = () => {
+            alert("updated successfully")
+        }
+       
+        
+        function resetAllDisplay() {
+            disA.style.display = "none";
+            disB.style.display = "none";
+        }
+    </script>
     </body>
 </html>
