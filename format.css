@@ -189,7 +189,7 @@ ul.breadcrumb li a:hover {
 }
 
 .grid-item:hover {
-    background-color: gray;
+    background-color: rgb(189, 187, 187);
     transition: 0.65s;
     border-radius: 20px;
 }
@@ -386,6 +386,11 @@ ul.breadcrumb li a:hover {
     
 }
 
+.todo-container {
+    justify-content: center;
+    align-items: center;
+}
+
 textarea {
     width: 500px;
     height: 300px;
@@ -503,7 +508,7 @@ label {
 
 .send-btn:hover {
     transform: translateY(-10px);
-    background: black;
+    background: rgb(189, 187, 187);
 }
 
 #settings_btn, #help_btn {
@@ -551,3 +556,4 @@ label {
 
 
 /*@jerichodinozo*/
+
